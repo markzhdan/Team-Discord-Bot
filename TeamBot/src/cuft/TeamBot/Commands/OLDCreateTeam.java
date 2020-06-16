@@ -1,10 +1,7 @@
 /*need to create methods for:
--checking if a player has a team role
--checking if captain
--checking if on team
+
 -checking if invited
 
-need to remove roles of all invites when player accepts
 need to make sure player can choose what team to accept
 
 make sure only people who are allowed to can execute certain commands - permissions if statements

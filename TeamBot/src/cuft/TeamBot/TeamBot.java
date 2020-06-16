@@ -15,12 +15,11 @@ public class TeamBot {
 	public static JDA jda;
 	public static String prefix = "*";
 	
-	
 	//Main Method
 	public static void main(String args[]) throws LoginException
 	{
-		jda = JDABuilder.createDefault("NzE5NzE3MDQ3NTcxMDU0Njkz.Xt7iMQ.eU8yOLGJG-ChcSAxJkFbwH_gYBI").enableIntents(GatewayIntent.GUILD_MEMBERS).setActivity(Activity.playing("Acidic League")).build();
-		
+		Token tkn = new Token();
+		jda = JDABuilder.createDefault(tkn.getToken()).enableIntents(GatewayIntent.GUILD_MEMBERS).setActivity(Activity.playing("Acidic League")).build();
 		jda.getPresence().setStatus(OnlineStatus.ONLINE);
 		
 		jda.addEventListener(new Info());
